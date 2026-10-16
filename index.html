@@ -1,129 +1,49 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#050505">
-<title>LITON FASHION | Everyday style, elevated</title>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101010"><title>LITON FASHION | Wear Your Style</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#050505;--panel:#111;--line:#292929;--muted:#929292;--white:#f7f7f7}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
-button,input,select{font:inherit}button,a{cursor:pointer}a{color:inherit;text-decoration:none}
-header{position:sticky;top:0;z-index:20;background:#050505f5;border-bottom:1px solid #222}
-.brandrow{min-height:96px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px max(24px,calc((100% - 1200px)/2))}
-.brand{font-weight:800;letter-spacing:.25em;font-size:clamp(18px,3vw,27px);white-space:nowrap}.brand span{font-weight:300;color:#aaa}
-.header-actions{display:flex;align-items:center;gap:14px}.iconbtn{background:transparent;color:white;border:1px solid #333;padding:10px 13px}.count{display:inline-grid;place-items:center;min-width:22px;height:22px;background:#fff;color:#000;font-size:12px;margin-left:5px}
-.searchrow{padding:0 max(24px,calc((100% - 1200px)/2)) 18px}.searchrow input{width:100%;padding:15px 18px;background:#171719;border:1px solid #303034;color:#fff;outline:none;letter-spacing:.12em}
-.hero{max-width:1200px;margin:auto;min-height:590px;display:grid;grid-template-columns:1.1fr .9fr;background:linear-gradient(120deg,#191715,#070707);overflow:hidden}
-.hero-copy{padding:clamp(30px,6vw,76px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.eyebrow{letter-spacing:.28em;font-size:12px;color:#bbb;text-transform:uppercase}.hero h1{font-size:clamp(38px,6vw,70px);line-height:.98;letter-spacing:-.055em;margin:20px 0}.hero p{color:#bbb;line-height:1.7;max-width:390px}.price{font-size:22px;margin:8px 0 25px}.primary,.outline{border:0;padding:15px 22px;background:#fff;color:#050505;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.hero-art{position:relative;min-height:420px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 40%,#6a6258,#24211f 55%,#0a0a0a 80%)}
-.shirt{position:relative;width:min(72%,360px);height:360px;filter:drop-shadow(0 22px 18px #0008);background:linear-gradient(90deg,#a9957e,#e1d2bd 48%,#aa947d);clip-path:polygon(30% 0,42% 9%,58% 9%,70% 0,100% 15%,84% 48%,76% 42%,80% 100%,20% 100%,24% 42%,16% 48%,0 15%);border-radius:8px}
-.shirt:before{content:"";position:absolute;left:42%;top:8%;width:16%;height:20%;background:#403a34;clip-path:polygon(0 0,100% 0,50% 100%)}.shirt:after{content:"";position:absolute;inset:14% 0 0;background:repeating-linear-gradient(0deg,transparent 0 47px,#fff5 48px 53px,transparent 54px 72px),repeating-linear-gradient(90deg,transparent 0 54px,#5f5145aa 55px 60px,transparent 61px 83px)}
-.hero-dots{display:flex;gap:10px;margin-top:25px}.hero-dots i{width:42px;height:3px;background:#555}.hero-dots i:first-child{background:white}
-section{max-width:1200px;margin:auto;padding:55px 24px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid #252525;padding-bottom:20px;margin-bottom:26px}.section-head h2{font-size:15px;letter-spacing:.28em;margin:0}.section-head span{font-size:11px;color:#777;letter-spacing:.16em}
-.filters{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 24px}.filter{background:#111;border:1px solid #333;color:#ddd;padding:10px 15px}.filter.active{background:#fff;color:#000}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.product{min-width:0}.product-image{height:360px;background:linear-gradient(135deg,#282521,#0d0d0d);display:grid;place-items:center;position:relative;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover}.product-image .placeholder{font-size:100px;filter:drop-shadow(0 15px 12px #0008)}.badge{position:absolute;left:12px;top:12px;background:#050505;color:#fff;padding:7px 10px;font-size:11px;letter-spacing:.1em}.product-info{padding:16px 0 20px}.product-title{font-weight:700;font-size:14px;letter-spacing:.04em}.product-meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:#999;font-size:13px}.product-meta strong{color:#fff;font-size:15px}.add{margin-top:14px;width:100%;padding:12px;background:transparent;border:1px solid #444;color:#fff;letter-spacing:.12em;font-size:11px}.add:hover{background:white;color:black}
-footer{border-top:1px solid #222;text-align:center;padding:42px 20px 55px;color:#777;font-size:11px;letter-spacing:.24em}footer strong{display:block;color:#eee;margin-bottom:18px}
-.whatsapp{position:fixed;right:22px;bottom:24px;width:62px;height:62px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;box-shadow:0 4px 25px #0008;z-index:25;font-size:25px;border:0}
-.modal-backdrop{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;z-index:50;padding:18px}.modal-backdrop.open{display:flex}.modal{background:#101010;border:1px solid #333;width:min(600px,100%);max-height:90vh;overflow:auto;padding:24px}.modal-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #333;padding-bottom:15px}.modal-top h2{font-size:18px;letter-spacing:.12em}.close{background:none;color:white;border:0;font-size:28px}.cart-list{margin:18px 0}.cart-item{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #292929;padding:14px 0}.cart-item small{display:block;color:#888;margin-top:5px}.qty{display:flex;gap:8px;align-items:center}.qty button{background:#222;color:#fff;border:1px solid #444;padding:4px 9px}.total{display:flex;justify-content:space-between;font-size:18px;margin:20px 0}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formgrid input,.formgrid textarea,.formgrid select{width:100%;background:#191919;border:1px solid #383838;padding:13px;color:white}.formgrid textarea{grid-column:1/-1;min-height:80px}.wide{width:100%;margin-top:12px}.empty{color:#888;text-align:center;padding:30px 0}
-@media(max-width:760px){.brandrow{min-height:78px;padding:18px 20px}.brand{letter-spacing:.18em;font-size:18px}.header-actions{gap:6px}.iconbtn{padding:8px}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:38px 28px 25px;order:1}.hero-art{min-height:330px;order:0}.shirt{height:290px;width:66%}.hero h1{font-size:47px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.product-image{height:250px}.section-head{align-items:flex-start}.section-head span{text-align:right}.searchrow{padding:0 20px 15px}section{padding:38px 20px}}
-@media(max-width:420px){.brand{font-size:15px;letter-spacing:.14em}.grid{grid-template-columns:1fr}.product-image{height:360px}.formgrid{grid-template-columns:1fr}.formgrid textarea{grid-column:auto}.hero h1{font-size:42px}}
-</style>
-</head>
-<body>
-<header>
- <div class="brandrow">
-  <a class="brand" href="#">LITON <span>FASHION</span></a>
-  <div class="header-actions"><button class="iconbtn" id="cartOpen" aria-label="Open cart">♧ <span class="count" id="cartCount">0</span></button></div>
- </div>
- <div class="searchrow"><input id="search" type="search" placeholder="⌕   SEARCH PRODUCTS..." aria-label="Search products"></div>
-</header>
-<main>
- <div class="hero">
-  <div class="hero-copy">
-   <div class="eyebrow">New collection / 2026</div>
-   <h1>FIND YOUR<br>EVERYDAY STYLE.</h1>
-   <p>Clean essentials. Easy fits. Everyday confidence. Discover your next favourite look at LITON FASHION.</p>
-   <div class="price">From ৳399</div>
-   <a class="primary" href="#collection">Shop collection →</a>
-   <div class="hero-dots"><i></i><i></i><i></i></div>
-  </div>
-  <div class="hero-art" aria-label="Stylized beige shirt illustration"><div class="shirt"></div></div>
- </div>
- <section id="collection">
-  <div class="section-head"><h2>COLLECTION CATALOG</h2><span id="shown">SHOWING 6 DROPS</span></div>
-  <div class="filters">
-   <button class="filter active" data-filter="All">All products</button><button class="filter" data-filter="T-Shirt">T-Shirts</button><button class="filter" data-filter="Shirt">Shirts</button><button class="filter" data-filter="Hoodie">Hoodies</button>
-  </div>
-  <div class="grid" id="products"></div>
- </section>
-</main>
-<footer><strong>LITON FASHION</strong>© 2026 ALL RIGHTS RESERVED.</footer>
-<button class="whatsapp" id="whatsapp" aria-label="Order through WhatsApp" title="Order through WhatsApp">☏</button>
-<div class="modal-backdrop" id="cartModal">
- <div class="modal">
-  <div class="modal-top"><h2>YOUR CART</h2><button class="close" data-close>×</button></div>
-  <div class="cart-list" id="cartList"></div>
-  <div class="total"><span>Total</span><strong id="total">৳0</strong></div>
-  <button class="primary wide" id="checkout">Checkout / Order</button>
- </div>
-</div>
-<div class="modal-backdrop" id="checkoutModal">
- <div class="modal">
-  <div class="modal-top"><h2>DELIVERY DETAILS</h2><button class="close" data-close>×</button></div>
-  <p style="color:#aaa;font-size:13px;line-height:1.6">Fill in your details. Your order will be prepared as a WhatsApp message. Online payment is not enabled in this starter site.</p>
-  <form id="orderForm">
-   <div class="formgrid"><input name="name" placeholder="Full name" required><input name="phone" placeholder="Phone number" required><input name="district" placeholder="District / City" required><input name="address" placeholder="Full delivery address" required><select name="payment"><option>Cash on delivery</option><option>I'll discuss payment on WhatsApp</option></select><textarea name="note" placeholder="Order note (size, colour, etc.)"></textarea></div>
-   <button class="primary wide" type="submit">Send order to WhatsApp</button>
-  </form>
- </div>
-</div>
+:root{--bg:#101010;--card:#191919;--line:#303030;--txt:#f7f7f2;--muted:#aaa;--lime:#d7ff64}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--txt);font-family:'Hind Siliguri',sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:min(1180px,calc(100% - 28px));margin:auto}.top{background:var(--lime);color:#111;text-align:center;padding:7px;font-size:12px;font-weight:700}header{position:sticky;top:0;background:#101010ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:15px}.logo{font:900 23px Montserrat;letter-spacing:-1px}.logo span{color:var(--lime)}nav{display:flex;gap:25px;color:#ddd;font-size:14px}nav a:hover{color:var(--lime)}.navbtn{border:1px solid var(--line);background:#1b1b1b;color:white;border-radius:50px;padding:10px 14px;cursor:pointer}.hero{padding:25px 0 40px}.hero-box{min-height:490px;border:1px solid #303030;border-radius:25px;overflow:hidden;position:relative;display:flex;align-items:center;background:radial-gradient(ellipse at 80% 45%,#4b4e3d,#20211d 34%,#121212 70%)}.hero-box:before{content:'LF';position:absolute;right:6%;top:4%;font:900 clamp(150px,27vw,330px)/1 Montserrat;color:var(--lime);opacity:.14;letter-spacing:-20px}.hero-box:after{content:'👕';position:absolute;right:13%;top:12%;font-size:clamp(120px,20vw,230px);filter:drop-shadow(0 20px 18px #0008);transform:rotate(-12deg)}.hero-copy{position:relative;z-index:1;padding:55px 7%;max-width:680px}.kicker{color:var(--lime);font:700 11px Montserrat;letter-spacing:2px}.hero h1{font:900 clamp(42px,7vw,82px)/.98 Montserrat;letter-spacing:-4px;margin:20px 0}.hero h1 em{font-style:normal;color:var(--lime)}.hero p{color:#c9c9c9;max-width:440px}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block;border-radius:50px;padding:12px 20px;font-weight:700;border:1px solid transparent;cursor:pointer}.primary{background:var(--lime);color:#111}.outline{border-color:#666}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:55px}.feature{padding:17px;background:var(--card);border:1px solid var(--line);border-radius:15px}.feature b{display:block}.feature small{color:var(--muted)}section{scroll-margin-top:90px}.head{margin:0 0 22px}.head small{color:var(--lime);font:700 11px Montserrat;letter-spacing:2px}.head h2{font:800 clamp(26px,4vw,40px) Montserrat;letter-spacing:-1.5px;margin:8px 0}.head p{color:var(--muted);margin:0}.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:52px}.cat{min-height:145px;padding:18px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(140deg,#303425,#191919);display:flex;align-items:end;position:relative;overflow:hidden;cursor:pointer}.cat:nth-child(2){background:linear-gradient(140deg,#2b2d3b,#191919)}.cat:nth-child(3){background:linear-gradient(140deg,#3a2c25,#191919)}.cat:nth-child(4){background:linear-gradient(140deg,#293332,#191919)}.cat:before{content:attr(data-emoji);position:absolute;right:7px;top:-17px;font-size:90px;opacity:.22;filter:grayscale(1)}.cat b{font:700 17px Montserrat}.toolbar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}.filters{display:flex;gap:7px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;color:#ccc;border-radius:50px;padding:8px 14px;cursor:pointer}.filter.active,.filter:hover{background:var(--lime);color:#111;border-color:var(--lime)}.search{display:flex;gap:8px}.search input,.search select{background:#191919;color:white;border:1px solid var(--line);border-radius:50px;padding:10px 13px;min-width:0}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:65px}.product{border:1px solid var(--line);background:var(--card);border-radius:17px;overflow:hidden;transition:.2s}.product:hover{transform:translateY(-4px);border-color:#788b42}.art{height:210px;display:grid;place-items:center;position:relative;background:linear-gradient(145deg,var(--tone),#171717)}.art span{font-size:86px;filter:drop-shadow(0 14px 12px #0008);transform:rotate(-7deg)}.tag{position:absolute;left:10px;top:10px;background:var(--lime);color:#111;font-size:10px;font-weight:800;padding:4px 7px;border-radius:5px}.info{padding:13px}.info small{color:var(--muted)}.info h3{font-size:15px;margin:4px 0 10px}.buyrow{display:flex;justify-content:space-between;align-items:center;gap:5px}.price{font:700 15px Montserrat}.add{border:1px solid #444;background:#252525;color:var(--lime);border-radius:50px;padding:7px 10px;cursor:pointer}.promo{padding:35px;border-radius:22px;background:var(--lime);color:#111;margin-bottom:55px;display:flex;justify-content:space-between;align-items:center;gap:20px}.promo h2{font:900 clamp(25px,4vw,42px) Montserrat;margin:8px 0}.promo p{margin:0}.promo .btn{background:#111;color:#fff;white-space:nowrap}.contact{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px;background:var(--card);border:1px solid var(--line);border-radius:20px;margin-bottom:55px}.contact h2{font:800 24px Montserrat;margin:0 0 8px}.contact p{margin:0;color:var(--muted)}footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.cart{position:fixed;right:0;top:0;height:100dvh;width:min(420px,100%);background:#141414;border-left:1px solid var(--line);z-index:30;transform:translateX(110%);transition:.25s;display:flex;flex-direction:column}.cart.open{transform:none}.carthead{padding:20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}.cartitems{padding:15px;overflow:auto;flex:1}.cartitem{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.cartitem button{background:#292929;color:white;border:0;border-radius:50%;padding:4px 9px}.cartfoot{padding:18px;border-top:1px solid var(--line)}.overlay{display:none;position:fixed;inset:0;background:#000a;z-index:25}.overlay.open{display:block}.modal{display:none;position:fixed;inset:0;z-index:40;background:#000b;place-items:center;padding:15px}.modal.open{display:grid}.modalbox{width:min(500px,100%);background:#171717;border:1px solid var(--line);border-radius:20px;padding:22px;max-height:90dvh;overflow:auto}.modalbox h2{margin-top:0}.form{display:grid;gap:12px}.form input,.form textarea{background:#0e0e0e;border:1px solid var(--line);border-radius:10px;padding:12px;color:white;width:100%}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:var(--lime);color:#111;padding:10px 17px;border-radius:50px;opacity:0;z-index:50;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:850px){.products{grid-template-columns:repeat(3,1fr)}.features{grid-template-columns:repeat(2,1fr)}nav{gap:12px}.hero-box{min-height:430px}.cats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.wrap{width:calc(100% - 22px)}.nav{height:62px}.logo{font-size:18px}nav{display:none}.hero{padding-top:13px}.hero-box{min-height:500px;align-items:end}.hero-box:after{right:10%;top:8%;font-size:145px}.hero-copy{padding:30px 22px}.hero h1{font-size:46px;letter-spacing:-2px}.hero p{font-size:14px}.features{gap:8px;margin-bottom:40px}.feature{padding:12px;font-size:13px}.feature small{font-size:11px}.cats{gap:8px}.cat{min-height:125px;padding:13px}.cat b{font-size:14px}.toolbar{display:block}.filters{overflow:auto;flex-wrap:nowrap;margin-bottom:10px;padding-bottom:4px}.filter{white-space:nowrap}.search input{flex:1;width:50%}.search select{width:48%}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.art{height:165px}.art span{font-size:68px}.info{padding:10px}.info h3{font-size:13px;min-height:36px}.price{font-size:13px}.add{font-size:11px;padding:6px 8px}.promo{display:block;padding:25px}.promo .btn{margin-top:17px}.contact{display:block;padding:22px}.contact .btn{margin-top:15px}.head h2{font-size:27px}}
+</style></head><body>
+<div class="top">✦ নতুন কালেকশন এসেছে · সারা বাংলাদেশে ডেলিভারি</div>
+<header><div class="wrap nav"><a class="logo" href="#home">LITON<span>.</span>FASHION</a><nav><a href="#home">হোম</a><a href="#categories">ক্যাটাগরি</a><a href="#shop">শপ</a><a href="#contact">যোগাযোগ</a></nav><button class="navbtn" id="cartOpen">🛍 কার্ট (<span id="count">0</span>)</button></div></header>
+<main><section class="hero wrap" id="home"><div class="hero-box"><div class="hero-copy"><div class="kicker">NEW SEASON · 2026</div><h1>WEAR YOUR<br><em>OWN STYLE.</em></h1><p>আপনার প্রতিদিনের লুককে দিন নতুন মাত্রা। আধুনিক ডিজাইন, আরামদায়ক ফিট আর স্টাইল—সব এক জায়গায়।</p><div class="buttons"><a class="btn primary" href="#shop">এখনই শপিং করুন ↗</a><a class="btn outline" href="#categories">কালেকশন দেখুন</a></div></div></div></section>
+<div class="wrap features"><div class="feature">🚚 <b>সারা দেশে ডেলিভারি</b><small>আপনার ঠিকানায় পৌঁছে যাবে</small></div><div class="feature">💵 <b>ক্যাশ অন ডেলিভারি</b><small>পণ্য পেয়ে পেমেন্ট করুন</small></div><div class="feature">✦ <b>স্টাইলিশ কালেকশন</b><small>নতুন ট্রেন্ড, নতুন লুক</small></div><div class="feature">💬 <b>সহজ অর্ডার</b><small>WhatsApp-এ অর্ডার</small></div></div>
+<section class="wrap" id="categories"><div class="head"><small>EXPLORE THE EDIT</small><h2>আপনার পছন্দের ক্যাটাগরি</h2><p>আপনার স্টাইল খুঁজে নিন এক ক্লিকেই।</p></div><div class="cats"><a class="cat" data-filter="T-Shirt" data-emoji="👕" href="#shop"><b>টি-শার্ট ↗</b></a><a class="cat" data-filter="Shirt" data-emoji="👔" href="#shop"><b>শার্ট ↗</b></a><a class="cat" data-filter="Pants" data-emoji="👖" href="#shop"><b>প্যান্ট ↗</b></a><a class="cat" data-filter="Hoodie" data-emoji="🧥" href="#shop"><b>হুডি ও জ্যাকেট ↗</b></a></div></section>
+<section class="wrap" id="shop"><div class="head"><small>THE COLLECTION</small><h2>নতুন কালেকশন</h2><p>আপনার পরবর্তী ফেভারিটটি এখানেই হতে পারে।</p></div><div class="toolbar"><div class="filters" id="filters"><button class="filter active" data-filter="All">সব পণ্য</button><button class="filter" data-filter="T-Shirt">টি-শার্ট</button><button class="filter" data-filter="Shirt">শার্ট</button><button class="filter" data-filter="Pants">প্যান্ট</button><button class="filter" data-filter="Hoodie">হুডি</button></div><div class="search"><input id="search" placeholder="পণ্য খুঁজুন..."><select id="sort"><option value="featured">জনপ্রিয়</option><option value="low">দাম: কম থেকে বেশি</option><option value="high">দাম: বেশি থেকে কম</option></select></div></div><div class="products" id="products"></div></section>
+<section class="wrap promo"><div><small>YOUR STYLE, YOUR RULES</small><h2>স্টাইল হোক একদম আপনার মতো।</h2><p>পছন্দের পণ্য বেছে নিন—অর্ডার করুন সহজেই।</p></div><a class="btn" href="#shop">কালেকশন দেখুন ↗</a></section>
+<section class="wrap contact" id="contact"><div><h2>LITON FASHION</h2><p>আপনার স্টাইল, আপনার পরিচয়। অর্ডার বা পণ্য সম্পর্কে জানতে WhatsApp-এ যোগাযোগ করুন।</p></div><button class="btn primary" id="contactBtn">যোগাযোগ করুন ↗</button></section></main>
+<footer><div class="wrap foot"><a class="logo" href="#home">LITON<span>.</span>FASHION</a><span>© 2026 LITON FASHION · Designed for everyday style.</span></div></footer>
+<div class="overlay" id="overlay"></div><aside class="cart" id="cart"><div class="carthead"><b>আপনার কার্ট</b><button class="navbtn" id="cartClose">✕</button></div><div class="cartitems" id="cartitems"></div><div class="cartfoot"><p>সর্বমোট: <b id="total">৳0</b></p><button class="btn primary" id="checkout" style="width:100%">অর্ডার করুন ↗</button></div></aside>
+<div class="modal" id="modal"><div class="modalbox"><div style="display:flex;justify-content:space-between;align-items:center"><h2>ডেলিভারি তথ্য</h2><button class="navbtn" id="modalClose">✕</button></div><form class="form" id="orderForm"><input id="name" required placeholder="আপনার নাম *"><input id="phone" required inputmode="tel" placeholder="মোবাইল নম্বর *"><textarea id="address" required placeholder="সম্পূর্ণ ঠিকানা *"></textarea><input id="note" placeholder="সাইজ/রঙ/অতিরিক্ত তথ্য (ঐচ্ছিক)"><button class="btn primary">WhatsApp-এ অর্ডার পাঠান ↗</button></form><small style="color:#aaa">নোট: ওয়েবসাইটে অনলাইন পেমেন্ট নেওয়া হয় না; অর্ডার WhatsApp-এ পাঠানো হবে।</small></div></div><div class="toast" id="toast"></div>
 <script>
-const products = [
- {id:1,name:"EMBROIDERED WHITE RINGER TEE",category:"T-Shirt",price:399,emoji:"👕",tag:"BESTSELLER",tone:"linear-gradient(135deg,#ddd7c9,#75685c)"},
- {id:2,name:"BEIGE CHECK SHIRT",category:"Shirt",price:799,emoji:"👔",tag:"NEW ARRIVAL",tone:"linear-gradient(135deg,#cbb69b,#67584a)"},
- {id:3,name:"OVERSIZED BLACK TEE",category:"T-Shirt",price:449,emoji:"👕",tag:"EVERYDAY",tone:"linear-gradient(135deg,#4a4a4a,#090909)"},
- {id:4,name:"MINIMAL CREAM TEE",category:"T-Shirt",price:399,emoji:"👕",tag:"ESSENTIAL",tone:"linear-gradient(135deg,#e8dfce,#9f9483)"},
- {id:5,name:"CASUAL DENIM SHIRT",category:"Shirt",price:899,emoji:"👔",tag:"NEW DROP",tone:"linear-gradient(135deg,#61768a,#202a36)"},
- {id:6,name:"CLASSIC EVERYDAY HOODIE",category:"Hoodie",price:1099,emoji:"🧥",tag:"COMFORT FIT",tone:"linear-gradient(135deg,#77716b,#292725)"}
-];
-let cart = JSON.parse(localStorage.getItem("litonFashionCart") || "[]");
-let activeFilter = "All";
-const $ = s => document.querySelector(s);
-function money(n){return "৳"+Number(n).toLocaleString("en-BD")}
-function saveCart(){localStorage.setItem("litonFashionCart",JSON.stringify(cart));renderCartCount()}
-function renderProducts(){
- const term=$("#search").value.trim().toLowerCase();
- const list=products.filter(p=>(activeFilter==="All"||p.category===activeFilter)&&(p.name.toLowerCase().includes(term)||p.category.toLowerCase().includes(term)));
- $("#shown").textContent=`SHOWING ${list.length} DROPS`;
- $("#products").innerHTML=list.map(p=>`<article class="product"><div class="product-image" style="background:${p.tone}"><span class="badge">${p.tag}</span><div class="placeholder" aria-hidden="true">${p.emoji}</div></div><div class="product-info"><div class="product-title">${p.name}</div><div class="product-meta"><span>PRICE</span><strong>${money(p.price)}</strong></div><button class="add" onclick="addToCart(${p.id})">ADD TO CART +</button></div></article>`).join("")||'<p class="empty">No products found. Try another search.</p>';
-}
-function renderCartCount(){$("#cartCount").textContent=cart.reduce((s,i)=>s+i.qty,0)}
-function addToCart(id){const item=cart.find(i=>i.id===id);item?item.qty++:cart.push({id,qty:1});saveCart();renderCart();$("#cartModal").classList.add("open")}
-function changeQty(id,delta){const item=cart.find(i=>i.id===id);if(!item)return;item.qty+=delta;if(item.qty<=0)cart=cart.filter(i=>i.id!==id);saveCart();renderCart()}
-function renderCart(){
- const list=$("#cartList");
- if(!cart.length){list.innerHTML='<div class="empty">Your cart is empty.</div>';$("#total").textContent=money(0);return}
- list.innerHTML=cart.map(i=>{const p=products.find(x=>x.id===i.id);return `<div class="cart-item"><div><strong>${p.name}</strong><small>${money(p.price)} each</small></div><div class="qty"><button onclick="changeQty(${p.id},-1)">−</button><span>${i.qty}</span><button onclick="changeQty(${p.id},1)">+</button></div></div>`}).join("");
- $("#total").textContent=money(cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0));
-}
-function openCheckout(){if(!cart.length){alert("Please add a product to your cart first.");return}$("#cartModal").classList.remove("open");$("#checkoutModal").classList.add("open")}
-function orderMessage(form){
- const data=new FormData(form);let lines=["Hello LITON FASHION! I want to place an order:"];
- cart.forEach(i=>{const p=products.find(x=>x.id===i.id);lines.push(`- ${p.name} x${i.qty} = ${money(p.price*i.qty)}`)});
- lines.push(`Total: ${money(cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0))}`);
- for(const [k,v] of data.entries())if(v)lines.push(`${k}: ${v}`);
- return lines.join("\\n");
-}
-function sendWhatsApp(message){const phone="8801XXXXXXXXX";if(phone.includes("X")){alert("Before receiving real orders, replace 8801XXXXXXXXX in index.html with your WhatsApp number, including country code 880.");return}window.open("https://wa.me/"+phone+"?text="+encodeURIComponent(message),"_blank")}
-$("#search").addEventListener("input",renderProducts);
-document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");activeFilter=b.dataset.filter;renderProducts()}));
-$("#cartOpen").addEventListener("click",()=>{$("#cartModal").classList.add("open");renderCart()});
-document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",()=>b.closest(".modal-backdrop").classList.remove("open")));
-document.querySelectorAll(".modal-backdrop").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)m.classList.remove("open")}));
-$("#checkout").addEventListener("click",openCheckout);
-$("#orderForm").addEventListener("submit",e=>{e.preventDefault();sendWhatsApp(orderMessage(e.target))});
-$("#whatsapp").addEventListener("click",()=>sendWhatsApp("Hello LITON FASHION! I want to ask about your products."));
-renderProducts();renderCartCount();renderCart();
-</script>
-</body>
-</html>
+/* নিজের WhatsApp নম্বর বসান: বাংলাদেশের নম্বর 880 দিয়ে শুরু, + বা স্পেস নয় */
+const WHATSAPP_NUMBER="8801XXXXXXXXX";
+const data=[
+{id:1,name:"Essential Oversized Tee",cat:"T-Shirt",price:650,tag:"BESTSELLER",art:"👕",tone:"#303523"},
+{id:2,name:"Classic Premium Shirt",cat:"Shirt",price:950,tag:"NEW",art:"👔",tone:"#292c3a"},
+{id:3,name:"Everyday Relaxed Pants",cat:"Pants",price:850,tag:"POPULAR",art:"👖",tone:"#332821"},
+{id:4,name:"Streetwear Hoodie",cat:"Hoodie",price:1250,tag:"NEW DROP",art:"🧥",tone:"#29312d"},
+{id:5,name:"Minimal Graphic Tee",cat:"T-Shirt",price:590,tag:"SALE",art:"👕",tone:"#392b2d"},
+{id:6,name:"Casual Check Shirt",cat:"Shirt",price:890,tag:"TRENDING",art:"👔",tone:"#333127"},
+{id:7,name:"Urban Cargo Pants",cat:"Pants",price:1100,tag:"LIMITED",art:"👖",tone:"#282e37"},
+{id:8,name:"Daily Comfort Hoodie",cat:"Hoodie",price:1350,tag:"PREMIUM",art:"🧥",tone:"#382f25"}];
+let filter="All",cart=JSON.parse(localStorage.getItem("lfcart")||"[]");const $=x=>document.getElementById(x),money=n=>"৳"+n.toLocaleString("en-BD");
+function toast(t){$("toast").textContent=t;$("toast").classList.add("show");setTimeout(()=>$("toast").classList.remove("show"),2300)}
+function render(){let a=data.filter(p=>(filter==="All"||p.cat===filter)&&p.name.toLowerCase().includes($("search").value.toLowerCase()));if($("sort").value==="low")a.sort((x,y)=>x.price-y.price);if($("sort").value==="high")a.sort((x,y)=>y.price-x.price);$("products").innerHTML=a.length?a.map(p=>`<article class="product"><div class="art" style="--tone:${p.tone}"><b class="tag">${p.tag}</b><span>${p.art}</span></div><div class="info"><small>${p.cat}</small><h3>${p.name}</h3><div class="buyrow"><b class="price">${money(p.price)}</b><button class="add" onclick="add(${p.id})">+ কার্টে</button></div></div></article>`).join(""):'<p>কোনো পণ্য পাওয়া যায়নি।</p>'}
+function save(){localStorage.setItem("lfcart",JSON.stringify(cart));renderCart()}
+function add(id){let x=cart.find(i=>i.id===id);x?x.qty++:cart.push({id,qty:1});save();toast("কার্টে যোগ হয়েছে ✓")}
+function renderCart(){let n=cart.reduce((s,i)=>s+i.qty,0),sum=cart.reduce((s,i)=>s+data.find(p=>p.id===i.id).price*i.qty,0);$("count").textContent=n;$("total").textContent=money(sum);$("cartitems").innerHTML=cart.length?cart.map(i=>{let p=data.find(x=>x.id===i.id);return `<div class="cartitem"><div>${p.art} <b>${p.name}</b><br><small>${money(p.price)} × ${i.qty}</small></div><div><button onclick="qty(${p.id},-1)">−</button> ${i.qty} <button onclick="qty(${p.id},1)">+</button><button onclick="removeItem(${p.id})">×</button></div></div>`}).join(""):'আপনার কার্ট খালি। পছন্দের পণ্য যোগ করুন।'}
+function qty(id,d){let x=cart.find(i=>i.id===id);if(x)x.qty+=d;cart=cart.filter(i=>i.qty>0);save()}function removeItem(id){cart=cart.filter(i=>i.id!==id);save()}
+function openCart(){ $("overlay").classList.add("open");$("cart").classList.add("open")}function closeCart(){$("overlay").classList.remove("open");$("cart").classList.remove("open")}
+function openModal(){if(!cart.length){toast("প্রথমে কার্টে পণ্য যোগ করুন");return}closeCart();$("modal").classList.add("open")}
+$("filters").onclick=e=>{let b=e.target.closest("[data-filter]");if(!b)return;filter=b.dataset.filter;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render()};
+document.querySelectorAll(".cat").forEach(x=>x.onclick=()=>{filter=x.dataset.filter;document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.filter===filter));render()});
+$("search").oninput=render;$("sort").onchange=render;$("cartOpen").onclick=openCart;$("cartClose").onclick=closeCart;$("overlay").onclick=closeCart;$("checkout").onclick=openModal;$("modalClose").onclick=()=>$("modal").classList.remove("open");
+function wa(msg){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg)}
+$("orderForm").onsubmit=e=>{e.preventDefault();if(WHATSAPP_NUMBER.includes("X")){toast("আগে index.html-এ WhatsApp নম্বর বসান");return}let lines=cart.map(i=>{let p=data.find(x=>x.id===i.id);return `${p.name} × ${i.qty} = ${money(p.price*i.qty)}`}).join("\n"),sum=cart.reduce((s,i)=>s+data.find(p=>p.id===i.id).price*i.qty,0);let msg=`🛍️ LITON FASHION ORDER\n${lines}\nমোট: ${money(sum)}\nনাম: ${$("name").value}\nফোন: ${$("phone").value}\nঠিকানা: ${$("address").value}\nনোট: ${$("note").value||"নেই"}`;window.open(wa(msg),"_blank");$("modal").classList.remove("open")};
+$("contactBtn").onclick=()=>{if(WHATSAPP_NUMBER.includes("X"))toast("আগে index.html-এ WhatsApp নম্বর বসান");else window.open(wa("আসসালামু আলাইকুম, LITON FASHION সম্পর্কে জানতে চাই।"),"_blank")};
+render();renderCart();
+</script></body></html>
